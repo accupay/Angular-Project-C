@@ -1,0 +1,35 @@
+.login{
+  position: static !important;
+  overflow: hidden;
+}
+.log_input{
+  display: grid;
+}
+.bg-org{
+  background: radial-gradient(circle at 10% 20%, rgb(255, 197, 61) 0%, rgb(255, 94, 7) 90%);
+}
+.text-orange{
+  color: #ff9005;
+}
+
+
+.loginPadd {
+width: 70% !important;
+margin-left: 15% !important;
+}
+
+.forgotcss{
+background-color: darkgray;
+color: white;
+height: 50px;
+padding-top: 15px;
+}
+
+.singInCss{
+text-align: center;
+background-color: darkgrey;
+color: white;
+font-weight: bold;
+height: 70px;
+padding-top: 25px;
+}

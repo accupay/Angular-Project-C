@@ -1,0 +1,170 @@
+<div class="container-fluid" id="main">
+
+  <div class="row row-offcanvas row-offcanvas-left">
+    <div class="col main">
+     
+      
+      <div class="row mb-3">
+        <div class="col-xl-8 col-sm-8 py-2">
+          <div class="card text-white bg-white">
+            <div class="card-header">
+              <div class="row align-items-start">
+                <div class="col">
+                  <h6 >business wallet</h6>
+                </div>
+                <div class="col" style="text-align: right;">
+                  <button class="bg-org" mat-raised-button color="primary">Add Money</button>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h2><b>Business Wallet</b></h2>
+              <h5>9659654657</h5>
+            </div>
+            <div class="card-footer">
+
+              <div class="row align-items-end">
+                <div class="col">
+                  <h6>View Balance</h6>
+                </div>
+                <div class="col">
+                  <h1 class="text-right"><b>ACCUPAYD</b></h1>
+                </div>
+              </div>
+
+            </div>
+
+
+
+
+          </div>
+          <div class=" bg-white mt-3">
+            <div class="row align-items-start text-center">
+             <div class="card ml-3 mt-3">
+              <button mat-button (click)="addaccount()"
+              ><mat-icon class="text-orange" (click)="addaccount()">add</mat-icon>
+
+              <span class="text-orange" (click)="addaccount()">Add Account</span></button>
+            </div>
+              <div class="card ml-3 mt-3">
+                <button mat-button [matMenuTriggerFor]="quickpay">
+                  <mat-icon class="text-orange">add</mat-icon><span class="text-orange">Quick Pay</span>
+                  </button>
+                <mat-menu #quickpay="matMenu">
+                  <button mat-menu-item >Bank</button>
+                  <button mat-menu-item >Wallet</button>
+                  <button mat-menu-item >Vendors</button>
+                  <button mat-menu-item>Employee</button>
+                </mat-menu>
+              </div>
+              <div class="card ml-3 mt-3">
+                <button mat-button [matMenuTriggerFor]="quickcollect">
+                  <mat-icon class="text-orange">add</mat-icon><span class="text-orange">Quick Collect</span>
+                  </button>
+                <mat-menu #quickcollect="matMenu">
+                  <button mat-menu-item>Item 1</button>
+                  <button mat-menu-item>Item 2</button>
+                </mat-menu>
+              </div>
+            </div>
+          
+
+          </div>
+        </div>
+      
+
+    
+        
+      
+      <div class="col-xl-4 col-sm-4 py-2">
+        <div class="card">
+          <div class="card-body">
+            <!-- <marquee direction="up" style="font-family: Rajdhani, sans-serif; color: #FFFFFF;" scrolldelay="100"
+              behavior="loop"> -->
+
+
+              <div class="py-2">
+
+                <div class="card text-white  bg-org">
+                  <div class="card-body">
+                    <div class="rotate">
+                      <i class="fa fa-user fa-4x"></i>
+                    </div>
+                    <h6 class="display-4 text-white"> 0</h6>
+                    <h5 class="text-uppercase text-white">MONEY IN</h5>
+
+                  </div>
+                </div>
+              </div>
+              <div class=" py-2">
+                <div class="card text-white   bg-org">
+                  <div class="card-body ">
+                    <div class="rotate">
+                      <i class="fa fa-list fa-4x"></i>
+                    </div>
+                    <h6 class="display-4 text-white"> 0</h6>
+                    <h5 class="text-uppercase text-white">MONEY OUT</h5>
+
+                    <!-- <h6 class="text-uppercase">Total Submerchants</h6>
+            <h1 class="display-4">{{total_submerchants? total_submerchants : "0"}}</h1> -->
+                  </div>
+                </div>
+              </div>
+
+
+              <div class=" py-2">
+                <div class="card text-white bg-org">
+                  <div class="card-body ">
+                    <div class="rotate">
+                      <i class="fa fa-twitter fa-4x"></i>
+                    </div>
+                    <h6 class="display-4 text-white"> 0</h6>
+                    <h5 class="text-uppercase text-white">RECEIVABLE</h5>
+
+                    <!-- <h6 class="text-uppercase">Current Month Added Merchant</h6>
+            <h1 class="display-4">{{current_month_added_merchants? current_month_added_merchants: "0" }}</h1> -->
+                  </div>
+                </div>
+              </div>
+              <div class=" py-2">
+                <div class="card text-white bg-org ">
+                  <div class="card-body ">
+                    <div class="rotate">
+                      <i class="fa fa-share fa-4x"></i>
+                    </div>
+                    <h6 class="display-4 text-white"> 0</h6>
+                    <h5 class="text-uppercase text-white">PAYABLE</h5>
+
+                    <!-- <h6 class="text-uppercase">Current Month Added Submerchant</h6>
+            <h1 class="display-4">{{ current_month_added_submerchant? current_month_added_submerchant:"0"}}</h1> -->
+                  </div>
+                </div>
+              </div>
+
+           
+              
+
+          </div>
+        </div>
+      </div>
+      <!-- <div class="col-xl-6 col-sm-6 py-2">
+        <div class="card text-white bg-white">
+          <div class="row align-items-start">
+    <div class="col">
+      One of three columns
+    </div>
+    <div class="col">
+      One of three columns
+    </div>
+    <div class="col">
+      One of three columns
+    </div>
+  </div>
+
+
+      </div>
+    </div> -->
+  
+    </div>
+  </div>
+</div>

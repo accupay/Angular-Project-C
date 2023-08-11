@@ -1,0 +1,101 @@
+<div [ngClass]="{ open: navService.sidebarState.sidenavOpen }" class="sidebar-left rtl-ps-none"
+  [perfectScrollbar]="{ suppressScrollX: true }">
+  <div class="logo">
+    <img src="./assets/images/icon.png" alt="" />
+  </div>
+
+  <mat-accordion>
+    <mat-expansion-panel style="background:#E28535;">
+      <mat-expansion-panel-header> 
+          <mat-panel-title>
+              <label>Dashboard
+                
+              </label>
+
+          </mat-panel-title>
+          <mat-panel-description>
+
+          </mat-panel-description>
+      </mat-expansion-panel-header>
+      <div>
+      <label><a href="" routerLink="/home"> Dashboard </a></label><br>
+      </div>
+  
+    </mat-expansion-panel>
+    
+  <mat-expansion-panel >
+    <mat-expansion-panel-header> 
+        <mat-panel-title>
+            <label>Vendors
+              
+            </label>
+
+        </mat-panel-title>
+        <mat-panel-description>
+
+        </mat-panel-description>
+    </mat-expansion-panel-header>
+    <div>
+    <label><a href="" routerLink="/payout/payout"> Registration </a></label><br>
+    <label><a href="" routerLink="/list">Vendor List</a></label><br>
+    <label><a href="" routerLink="/payout/vendor-upload">Vendor Upload</a></label><br>
+    <label><a href="" routerLink="/download">Download Vendor List</a></label>
+  </div>
+</mat-expansion-panel>
+<mat-expansion-panel >
+  <mat-expansion-panel-header> 
+      <mat-panel-title>
+          <label>Invoice
+            
+          </label>
+
+      </mat-panel-title>
+      <mat-panel-description>
+
+      </mat-panel-description>
+  </mat-expansion-panel-header>
+  <label><a href="" routerLink="/invoice-get/add-invoice">Add Invoice</a></label><br>
+  <label><a href="" routerLink="/invoice-get/invoice-list">Invoice List</a></label><br>
+  <label><a href="" routerLink="/invoice-get/upload-invoice">Generate Invoice</a></label><br>
+  <label><a href="" routerLink="/list">Invoice List</a></label><br>
+  <label><a href="" routerLink="/payment">Payment Advice List</a></label><br>
+  <label><a href="" routerLink="/invoice-get/upload-invoice">Upload Invoice</a></label><br>
+  
+</mat-expansion-panel>
+<mat-expansion-panel >
+  <mat-expansion-panel-header> 
+      <mat-panel-title>
+          <label>GST Payment
+            
+          </label>
+
+      </mat-panel-title>
+      <mat-panel-description>
+
+      </mat-panel-description>
+  </mat-expansion-panel-header>
+  <label><a href="" routerLink="/gst-payment">Add GST Payments</a></label><br>
+  <label><a href="" routerLink="/gst-payment/upload-gst">Bulk Upload GST Payments</a></label><br>
+  <label><a href="" routerLink="/gstinvoice">Invoice List</a></label><br>
+  <label><a href="" routerLink="/gst">Payment Advice List</a></label>
+</mat-expansion-panel>
+<mat-expansion-panel >
+  <mat-expansion-panel-header> 
+      <mat-panel-title>
+          <label>Advance Tax Payment
+            
+          </label>
+
+      </mat-panel-title>
+      <mat-panel-description>
+
+      </mat-panel-description>
+  </mat-expansion-panel-header>
+  <label><a href="" routerLink="/taxpay">Add Advance Tax Payment</a></label><br>
+  <label><a href="" routerLink="/taxlist">Invoice List</a></label><br>
+  <label><a href="" routerLink="/taxpayment">Payment Advice List</a></label><br>
+  <label><a href="" routerLink="/taxlist">Download Vendor List</a></label>
+</mat-expansion-panel>
+  </mat-accordion>
+</div>
+  

@@ -1,0 +1,350 @@
+<div class="main-header">
+  <div class="logo" style="cursor: pointer" (click)="returnHome()">
+    <img src="./assets/images/accupaydedit-logo-v2-01.png" alt="" />
+
+  </div>
+  <div>
+    <div class="menu-toggle row" (click)="toggelSidebar()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <!-- <div style="display: flex;">
+    <div class="row">
+      
+      
+      <button mat-button 
+      >
+        Add Account</button>
+    
+      
+      <button mat-button [matMenuTriggerFor]="belowMenu">Quick Pay</button>
+      <mat-menu #belowMenu="matMenu" yPosition="below">
+        <button mat-menu-item> Bank</button>
+        <button mat-menu-item>Wallet</button>
+        <button mat-menu-item>Vendors</button>
+        <button mat-menu-item>Employee</button>
+        <button mat-button [matMenuTriggerFor]="beforeMenu">Quick Collect</button>
+      <mat-menu #beforeMenu="matMenu" xPosition="before">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+      </mat-menu>
+      </mat-menu>
+    
+    
+      
+    
+    </div>
+  </div>  -->
+
+  <div style="margin: auto" class="header-part-left-menu">
+
+  </div>
+
+  <div class="header-part-right">
+    <div ngbDropdown [placement]="'bottom-right'">
+      <!-- <div class="badge-top-container mr-2">
+        <span >
+          <i
+            class="i-File-Clipboard-Text--Image text-muted header-icon"
+            style="font-size: 30px"
+            role="button"
+          ></i>
+          <span class="report-text-hidden">Top Up</span>
+        </span>
+      </div> -->
+      <!-- <div
+        ngbDropdownMenu
+        aria-labelledby="reportDropDown"
+        class="header-account-dropdown atp-topup-dropdown"
+        *ngIf="topUpData.length"
+      >
+        <div class="col-md-12">
+          <div class="d-flex justify-content-between border-bottom p-2">
+            <div class="flex-grow-1 haha">
+              <p class="text-12 text-muted m-0"><strong>Bank Name</strong></p>
+            </div>
+            <div class="flex-grow-1 haha">
+              <p class="text-12 text-muted m-0"><strong>Account No</strong></p>
+            </div>
+            <div class="flex-grow-1 haha">
+              <p class="text-12 text-muted m-0"><strong>IFSC Code</strong></p>
+            </div>
+          </div>
+          <div
+            class="d-flex justify-content-between border-bottom p-2"
+            *ngFor="let topUp of topUpData"
+          >
+            <div class="flex-grow-1 haha">
+              <p class="text-12 text-muted m-0">{{ topUp?.bank_name }}</p>
+            </div>
+            <div class="flex-grow-1 haha">
+              <p class="text-12 text-muted m-0">{{ topUp?.account_number }}</p>
+            </div>
+            <div class="flex-grow-1 haha">
+              <p class="text-12 text-muted m-0">{{ topUp?.ifsc_code }}</p>
+            </div>
+          </div>
+          <div class="card mb-4 o-hidden">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Cras justo odio</li>
+              <li class="list-group-item">Dapibus ac facilisis in</li>
+              <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+
+    <div ngbDropdown [placement]="'bottom-right'">
+      
+      <!-- <button mat-button [matMenuTriggerFor]="animals"
+      
+      ><mat-icon class="header-icon" style="font-size: 30px" role="button" [matMenuTriggerFor]="animals">menu</mat-icon>
+      Tools
+        </button>
+      <mat-menu #animals="matMenu">
+        <button mat-menu-item >Add Account</button>
+        <button mat-menu-item [matMenuTriggerFor]="vertebrates">Quick Pay</button>
+        <button mat-menu-item [matMenuTriggerFor]="invertebrates">Quick Collect</button>
+        
+        
+      </mat-menu>
+
+      <mat-menu #vertebrates="matMenu">
+        <button mat-menu-item >Bank</button>
+        <button mat-menu-item >Wallet</button>
+        <button mat-menu-item >Vendors</button>
+        <button mat-menu-item>Employee</button>
+       
+       
+      </mat-menu>
+
+      <mat-menu #invertebrates="matMenu">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+        <button mat-menu-item>Item 3</button> -->
+        <!-- <button mat-menu-item>Corals</button>
+        <button mat-menu-item>Arachnids</button>
+        <button mat-menu-item>Velvet worms</button>
+        <button mat-menu-item>Horseshoe crabs</button> -->
+      <!-- </mat-menu> -->
+
+      <!-- <mat-menu #fish="matMenu">
+        <button mat-menu-item>Baikal oilfish</button>
+        <button mat-menu-item>Bala shark</button>
+        <button mat-menu-item>Ballan wrasse</button>
+        <button mat-menu-item>Bamboo shark</button>
+        <button mat-menu-item>Banded killifish</button>
+      </mat-menu> -->
+
+      <!-- <mat-menu #amphibians="matMenu">
+        <button mat-menu-item>Sonoran desert toad</button>
+        <button mat-menu-item>Western toad</button>
+        <button mat-menu-item>Arroyo toad</button>
+        <button mat-menu-item>Yosemite toad</button>
+      </mat-menu> -->
+
+      <!-- <mat-menu #reptiles="matMenu">
+        <button mat-menu-item>Banded Day Gecko</button>
+        <button mat-menu-item>Banded Gila Monster</button>
+        <button mat-menu-item>Black Tree Monitor</button>
+        <button mat-menu-item>Blue Spiny Lizard</button>
+        <button mat-menu-item disabled>Velociraptor</button>
+      </mat-menu> -->
+      <!-- <div class="badge-top-container">
+        <span ngbDropdownToggle>
+          <i
+            class="i-Bar-Chart text-muted header-icon"
+            style="font-size: 30px"
+            role="button"
+          ></i>
+          <span class="report-text-hidden">Add Account</span>
+        </span>
+      </div> -->
+      <!-- <div
+        ngbDropdownMenu
+        aria-labelledby="reportDropDown"
+        class="header-account-dropdown"
+      >
+        <button
+          class="dropdown-item"
+          [routerLink]="'/reports/transaction-report'"
+        >
+          <i class="i-Clock-3 mr-1"></i>
+          Account Statement
+        </button>
+        <button
+          class="dropdown-item"
+          [routerLink]="'/reports/refund-payment-transaction-report'"
+        >
+          <i class="i-Over-Time mr-1"></i>
+          Refund Report
+        </button>
+        <button
+          class="dropdown-item"
+          [routerLink]="'/reports/retailer-payment-transaction-report'"
+        >
+          <i class="i-Clock mr-1"></i>
+          DMT Report
+        </button>
+        <button
+          class="dropdown-item"
+          [routerLink]="'/reports/payout-transaction-report'"
+        >
+          <i class="i-Clock mr-1"></i>
+          Payout Transaction Report
+        </button>
+        <button
+          class="dropdown-item"
+          [routerLink]="'/reports/payout-refund-report'"
+        >
+          <i class="i-Clock mr-1"></i>
+          Payout Refund Report
+        </button>
+        <button
+        class="dropdown-item"
+        [routerLink]="'/reports/retailer-topup-PG-report'"
+      >
+        <i class="i-Clock mr-1"></i>
+        Top Up And PG Report
+      </button>
+      </div> -->
+    </div>
+
+    <div ngbDropdown [placement]="'bottom-right'" class="user col align-self-end">
+      <img src="./assets/images/faq_man.png" id="userDropdown" ngbDropdownToggle alt="" />
+
+      <div ngbDropdownMenu aria-labelledby="userDropdown" class="header-account-dropdown">
+        <div class="dropdown-header text-20">
+          <i class="i-Lock-User mr-1"></i> {{ retailerName }}
+        </div>
+        <button class="dropdown-item" (click)="profile('profile')">
+          Profile
+        </button>
+        <button class="dropdown-item" (click)="profile('support')">
+          Support Informations
+        </button>
+        <button class="dropdown-item" [routerLink]="'/home/change-password'">
+          Change Password
+        </button>
+        <button class="dropdown-item" (click)="signout()">Sign out</button>
+      </div>
+    </div>
+
+    <!-- <i
+      class="i-Magnifi-Glass1 header-icon"
+      role="button"
+      (click)="searchService.searchOpen = true"
+    ></i>
+    <i
+      fullScreenWindow
+      class="i-Full-Screen header-icon d-none d-sm-inline-block"
+      role="button"
+    ></i>
+    <div
+      ngbDropdown
+      [placement]="'bottom-right'"
+      class="d-none d-sm-inline-block"
+    >
+      <i
+        ngbDropdownToggle
+        class="i-Gear text-muted header-icon"
+        role="button"
+      ></i>
+      <div ngbDropdownMenu class="menu-icon-grid-dropdown">
+        <div class="menu-icon-grid">
+          <a href="#"><i class="i-Shop-4"></i> Home</a>
+          <a href="#"><i class="i-Library"></i> UI Kits</a>
+          <a href="#"><i class="i-Drop"></i> Apps</a>
+          <a href="#"><i class="i-File-Clipboard-File--Text"></i> Forms</a>
+          <a href="#"><i class="i-Checked-User"></i> Sessions</a>
+          <a href="#"><i class="i-Ambulance"></i> Support</a>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- <div ngbDropdown [placement]="'bottom-right'">
+      <div class="badge-top-container">
+        <span class="badge badge-primary">{{ notifications.length }}</span>
+        <i
+          ngbDropdownToggle
+          class="i-Bell text-muted header-icon"
+          role="button"
+        ></i>
+      </div>
+      <div
+        ngbDropdownMenu
+        class="notification-dropdown rtl-ps-none"
+        perfectScrollbar
+      >
+        <div
+          class="dropdown-item d-flex"
+          *ngFor="let item of notifications"
+          [routerLink]="[item.link]"
+        >
+          <div class="notification-icon">
+            <i class="{{ item.icon }} text-{{ item.status }} mr-1"></i>
+          </div>
+          <div class="notification-details flex-grow-1">
+            <p class="m-0 d-flex align-items-center">
+              <span>{{ item.title }}</span>
+              <span
+                *ngIf="item.badge"
+                class="badge badge-pill badge-{{ item.status }} ml-1 mr-1"
+                >{{ item.badge }}</span
+              >
+              <span class="flex-grow-1"></span>
+              <span class="text-small text-muted ml-auto">{{
+                item.time | relativeTime
+              }}</span>
+            </p>
+            <p class="text-small text-muted m-0">
+              {{ item.text | excerpt : 30 }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Settings -->
+    <!-- <div class="header-part-right">
+    <i class="i-Magnifi-Glass1 header-icon" role="button"></i>
+    <i
+      class="i-Magnifi-Glass1 header-icon"
+      role="button"
+      (click)="searchService.searchOpen = true"
+    ></i>
+    <i
+      fullScreenWindow
+      class="i-Full-Screen header-icon d-none d-sm-inline-block"
+      role="button"
+    ></i>
+    <div
+      ngbDropdown
+      [placement]="'bottom-right'"
+      class="d-none d-sm-inline-block"
+    >
+      <i
+        ngbDropdownToggle
+        class="i-Gear text-muted header-icon"
+        role="button"
+      ></i>
+      <div ngbDropdownMenu class="menu-icon-grid-dropdown">
+        <div class="menu-icon-grid">
+          <a href="#"><i class="i-Shop-4"></i> Home</a>
+          <a href="#"><i class="i-Library"></i> UI Kits</a>
+          <a href="#"><i class="i-Drop"></i> Apps</a>
+          <a href="#"><i class="i-File-Clipboard-File--Text"></i> Forms</a>
+          <a href="#"><i class="i-Checked-User"></i> Sessions</a>
+          <a href="#"><i class="i-Ambulance"></i> Support</a>
+        </div>
+      </div>
+    </div> -->
+  </div>
+</div>

@@ -1,0 +1,444 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="card mb-4">
+            <div class="card-header bg-color">
+                <h5 class="text-white"><b>GSTIN Details</b></h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <mat-form-field appearance="outline" class="col-md-12">
+                        <mat-label>GST Number</mat-label>
+                        <input matInput placeholder="Enter the GST Number" formControlName="mobile_no" id="mobile_no">
+
+                        <!-- <mat-icon matSuffix>phone_iphone</mat-icon> -->
+                        <!-- <mat-error *ngIf="myError('mobile_no', 'required')">mobile number is required</mat-error> -->
+
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="card mb-4">
+            <div class="card-header bg-color ">
+                <h5 class="text-white"><b>Business Details</b></h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <mat-form-field appearance="outline" class="col-md-6">
+                        <mat-label>Vendor Name</mat-label>
+                        <input matInput placeholder="vendor name" formControlName="mobile_no" id="mobile_no">
+
+                        <!-- <mat-icon matSuffix>phone_iphone</mat-icon> -->
+                        <!-- <mat-error *ngIf="myError('mobile_no', 'required')">mobile number is required</mat-error> -->
+
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="col-md-6 ">
+                        <mat-label>Customer</mat-label>
+                        <mat-select formControlName="Select a Customer" id="operator">
+                            <mat-option>none</mat-option>
+                            <mat-option value="option1">Option1</mat-option>
+                            <mat-option value="option2">Option2</mat-option>
+                        </mat-select>
+                        <!-- <mat-icon matSuffix>rss_feed</mat-icon> -->
+                        <!-- <mat-error *ngIf="myError('operator', 'required')">operator is required</mat-error> -->
+
+
+
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="col-md-6 ">
+                        <mat-label>BusinessType</mat-label>
+                        <mat-select formControlName="Select BusinessType" id="operator">
+                            <mat-option>none</mat-option>
+                            <mat-option value="option1">Option1</mat-option>
+                            <mat-option value="option2">Option2</mat-option>
+                        </mat-select>
+                        <!-- <mat-icon matSuffix>rss_feed</mat-icon> -->
+                        <!-- <mat-error *ngIf="myError('operator', 'required')">operator is required</mat-error> -->
+
+
+
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="col-md-6 ">
+                        <mat-label>Select LOB</mat-label>
+                        <mat-select formControlName="operator" id="operator">
+                            <mat-option>none</mat-option>
+                            <mat-option value="option1">Option1</mat-option>
+                            <mat-option value="option2">Option2</mat-option>
+                        </mat-select>
+                        <!-- <mat-icon matSuffix>rss_feed</mat-icon> -->
+                        <!-- <mat-error *ngIf="myError('operator', 'required')">operator is required</mat-error> -->
+
+
+
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="col-md-6">
+                        <mat-label>Payment Limit</mat-label>
+                        <input matInput placeholder="Payment Limit" formControlName="mobile_no" id="mobile_no">
+
+                        <!-- <mat-icon matSuffix>phone_iphone</mat-icon> -->
+                        <!-- <mat-error *ngIf="myError('mobile_no', 'required')">mobile number is required</mat-error> -->
+
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="col-md-6">
+                        <mat-label>Vendor <Code></Code></mat-label>
+                        <input matInput placeholder="Vendor Code" formControlName="mobile_no" id="mobile_no">
+
+                        <!-- <mat-icon matSuffix>phone_iphone</mat-icon> -->
+                        <!-- <mat-error *ngIf="myError('mobile_no', 'required')">mobile number is required</mat-error> -->
+
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+
+                </div>
+            </div>
+        </div>
+        <div class="card mb-4">
+            <div class="card-header bg-color ">
+                <h5 class="text-white"><b>Address</b></h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <mat-form-field appearance="outline" class="col-md-6">
+                        <mat-label>Address1</mat-label>
+                        <input matInput placeholder="Address1" formControlName="mobile_no" id="mobile_no">
+
+                        <!-- <mat-icon matSuffix>phone_iphone</mat-icon> -->
+                        <!-- <mat-error *ngIf="myError('mobile_no', 'required')">mobile number is required</mat-error> -->
+
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="col-md-6">
+                        <mat-label>Address2</mat-label>
+                        <input matInput placeholder="Address2" formControlName="mobile_no" id="mobile_no">
+
+                        <!-- <mat-icon matSuffix>phone_iphone</mat-icon> -->
+                        <!-- <mat-error *ngIf="myError('mobile_no', 'required')">mobile number is required</mat-error> -->
+
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="col-md-6">
+                        <mat-label>Zipcode</mat-label>
+                        <input matInput placeholder="Zipcode" formControlName="mobile_no" id="mobile_no">
+
+                        <!-- <mat-icon matSuffix>phone_iphone</mat-icon> -->
+                        <!-- <mat-error *ngIf="myError('mobile_no', 'required')">mobile number is required</mat-error> -->
+
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="col-md-6">
+                        <mat-label>City</mat-label>
+                        <input matInput placeholder="City" formControlName="mobile_no" id="mobile_no">
+
+                        <!-- <mat-icon matSuffix>phone_iphone</mat-icon> -->
+                        <!-- <mat-error *ngIf="myError('mobile_no', 'required')">mobile number is required</mat-error> -->
+
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="col-md-6">
+                        <mat-label>State</mat-label>
+                        <input matInput placeholder="State" formControlName="mobile_no" id="mobile_no">
+
+                        <!-- <mat-icon matSuffix>phone_iphone</mat-icon> -->
+                        <!-- <mat-error *ngIf="myError('mobile_no', 'required')">mobile number is required</mat-error> -->
+
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="col-md-6">
+                        <mat-label>Country</mat-label>
+                        <input matInput placeholder="Country" formControlName="mobile_no" id="mobile_no">
+
+                        <!-- <mat-icon matSuffix>phone_iphone</mat-icon> -->
+                        <!-- <mat-error *ngIf="myError('mobile_no', 'required')">mobile number is required</mat-error> -->
+
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="col-md-6">
+                        <mat-label>Mobile Number</mat-label>
+                        <input matInput placeholder="enter mobile number" formControlName="mobile_no" id="mobile_no">
+
+                        <!-- <mat-icon matSuffix>phone_iphone</mat-icon> -->
+                        <!-- <mat-error *ngIf="myError('mobile_no', 'required')">mobile number is required</mat-error> -->
+
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="card mb-4">
+            <div class="card-header bg-color ">
+                <h5 class="text-white"><b>Tax Details</b></h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <mat-form-field appearance="outline" class="col-md-6">
+                        <mat-label>Address1</mat-label>
+                        <input matInput placeholder="Address1" formControlName="mobile_no" id="mobile_no">
+
+                        <!-- <mat-icon matSuffix>phone_iphone</mat-icon> -->
+                        <!-- <mat-error *ngIf="myError('mobile_no', 'required')">mobile number is required</mat-error> -->
+
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="col-md-6">
+                        <mat-label>Address2</mat-label>
+                        <input matInput placeholder="Address2" formControlName="mobile_no" id="mobile_no">
+
+                        <!-- <mat-icon matSuffix>phone_iphone</mat-icon> -->
+                        <!-- <mat-error *ngIf="myError('mobile_no', 'required')">mobile number is required</mat-error> -->
+
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="col-md-6">
+                        <mat-label>Zipcode</mat-label>
+                        <input matInput placeholder="Zipcode" formControlName="mobile_no" id="mobile_no">
+
+                        <!-- <mat-icon matSuffix>phone_iphone</mat-icon> -->
+                        <!-- <mat-error *ngIf="myError('mobile_no', 'required')">mobile number is required</mat-error> -->
+
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="col-md-6">
+                        <mat-label>City</mat-label>
+                        <input matInput placeholder="City" formControlName="mobile_no" id="mobile_no">
+
+                        <!-- <mat-icon matSuffix>phone_iphone</mat-icon> -->
+                        <!-- <mat-error *ngIf="myError('mobile_no', 'required')">mobile number is required</mat-error> -->
+
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="col-md-6">
+                        <mat-label>State</mat-label>
+                        <input matInput placeholder="State" formControlName="mobile_no" id="mobile_no">
+
+                        <!-- <mat-icon matSuffix>phone_iphone</mat-icon> -->
+                        <!-- <mat-error *ngIf="myError('mobile_no', 'required')">mobile number is required</mat-error> -->
+
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="col-md-6">
+                        <mat-label>Country</mat-label>
+                        <input matInput placeholder="Country" formControlName="mobile_no" id="mobile_no">
+
+                        <!-- <mat-icon matSuffix>phone_iphone</mat-icon> -->
+                        <!-- <mat-error *ngIf="myError('mobile_no', 'required')">mobile number is required</mat-error> -->
+
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="col-md-6">
+                        <mat-label>Mobile Number</mat-label>
+                        <input matInput placeholder="enter mobile number" formControlName="mobile_no" id="mobile_no">
+
+                        <!-- <mat-icon matSuffix>phone_iphone</mat-icon> -->
+                        <!-- <mat-error *ngIf="myError('mobile_no', 'required')">mobile number is required</mat-error> -->
+
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="card mb-4">
+            <div class="card-header bg-color ">
+                <h5 class="text-white"><b>Bank Details</b></h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <mat-form-field appearance="outline" class="col-md-6">
+                        <mat-label>Account Name</mat-label>
+                        <input matInput placeholder="account name" formControlName="mobile_no" id="mobile_no">
+
+                        <!-- <mat-icon matSuffix>phone_iphone</mat-icon> -->
+                        <!-- <mat-error *ngIf="myError('mobile_no', 'required')">mobile number is required</mat-error> -->
+
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="col-md-6">
+                        <mat-label>Account Number</mat-label>
+                        <input matInput placeholder="Enter account Number" formControlName="mobile_no" id="mobile_no">
+
+                        <!-- <mat-icon matSuffix>phone_iphone</mat-icon> -->
+                        <!-- <mat-error *ngIf="myError('mobile_no', 'required')">mobile number is required</mat-error> -->
+
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="col-md-6">
+                        <mat-label>Confirm A/C Number</mat-label>
+                        <input matInput placeholder="Confirm account number" formControlName="mobile_no" id="mobile_no">
+
+                        <!-- <mat-icon matSuffix>phone_iphone</mat-icon> -->
+                        <!-- <mat-error *ngIf="myError('mobile_no', 'required')">mobile number is required</mat-error> -->
+
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="col-md-6">
+                        <mat-label>IFSC</mat-label>
+                        <input matInput placeholder="ifsc" formControlName="mobile_no" id="mobile_no">
+
+                        <!-- <mat-icon matSuffix>phone_iphone</mat-icon> -->
+                        <!-- <mat-error *ngIf="myError('mobile_no', 'required')">mobile number is required</mat-error> -->
+
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="col-md-6">
+                        <mat-label>Bank Name</mat-label>
+                        <input matInput placeholder="Enter bank name" formControlName="mobile_no" id="mobile_no">
+
+                        <!-- <mat-icon matSuffix>phone_iphone</mat-icon> -->
+                        <!-- <mat-error *ngIf="myError('mobile_no', 'required')">mobile number is required</mat-error> -->
+
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="col-md-6">
+                        <mat-label>Branch</mat-label>
+                        <input matInput placeholder="enter branch" formControlName="mobile_no" id="mobile_no">
+
+                        <!-- <mat-icon matSuffix>phone_iphone</mat-icon> -->
+                        <!-- <mat-error *ngIf="myError('mobile_no', 'required')">mobile number is required</mat-error> -->
+
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="col-md-6">
+                        <mat-label>Bank City</mat-label>
+                        <input matInput placeholder="enter bank city" formControlName="mobile_no" id="mobile_no">
+
+                        <!-- <mat-icon matSuffix>phone_iphone</mat-icon> -->
+                        <!-- <mat-error *ngIf="myError('mobile_no', 'required')">mobile number is required</mat-error> -->
+
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="col-md-6">
+                        <mat-label>Bank State</mat-label>
+                        <input matInput placeholder="enter bank state" formControlName="mobile_no" id="mobile_no">
+
+                        <!-- <mat-icon matSuffix>phone_iphone</mat-icon> -->
+                        <!-- <mat-error *ngIf="myError('mobile_no', 'required')">mobile number is required</mat-error> -->
+
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+        <div class="card mb-4">
+            <div class="card-header bg-color ">
+                <h5 class="text-white"><b>Contact Details</b></h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <mat-form-field appearance="outline" class="col-md-6">
+                        <mat-label>First Name</mat-label>
+                        <input matInput placeholder="Enter name" formControlName="mobile_no" id="mobile_no">
+
+                        <!-- <mat-icon matSuffix>phone_iphone</mat-icon> -->
+                        <!-- <mat-error *ngIf="myError('mobile_no', 'required')">mobile number is required</mat-error> -->
+
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="col-md-6">
+                        <mat-label>Last Name</mat-label>
+                        <input matInput placeholder="Last Name" formControlName="mobile_no" id="mobile_no">
+
+                        <!-- <mat-icon matSuffix>phone_iphone</mat-icon> -->
+                        <!-- <mat-error *ngIf="myError('mobile_no', 'required')">mobile number is required</mat-error> -->
+
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="col-md-6">
+                        <mat-label>Mobile Number</mat-label>
+                        <input matInput placeholder="Enter mobile number" formControlName="mobile_no" id="mobile_no">
+
+                        <!-- <mat-icon matSuffix>phone_iphone</mat-icon> -->
+                        <!-- <mat-error *ngIf="myError('mobile_no', 'required')">mobile number is required</mat-error> -->
+
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="col-md-6">
+                        <mat-label>EmailId</mat-label>
+                        <input matInput placeholder="Enter mail" formControlName="mobile_no" id="mobile_no">
+
+                        <!-- <mat-icon matSuffix>phone_iphone</mat-icon> -->
+                        <!-- <mat-error *ngIf="myError('mobile_no', 'required')">mobile number is required</mat-error> -->
+
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+        <div class="card mb-4">
+            <div class="card-header bg-color ">
+                <h5 class="text-white"><b>Business Histroy</b></h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <mat-form-field appearance="outline" class="col-md-6">
+                        <mat-label>How Long is Your Business relationship with this vendor</mat-label>
+                        <input matInput placeholder="" formControlName="mobile_no" id="mobile_no">
+
+                        <!-- <mat-icon matSuffix>phone_iphone</mat-icon> -->
+                        <!-- <mat-error *ngIf="myError('mobile_no', 'required')">mobile number is required</mat-error> -->
+
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="col-md-6">
+                        <mat-label>Approx volume of Business in last 12 months</mat-label>
+                        <input matInput placeholder="" formControlName="mobile_no" id="mobile_no">
+
+                        <!-- <mat-icon matSuffix>phone_iphone</mat-icon> -->
+                        <!-- <mat-error *ngIf="myError('mobile_no', 'required')">mobile number is required</mat-error> -->
+
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="col-md-6">
+                        <mat-label>Approx volume of Business in last 3 months</mat-label>
+                        <input matInput placeholder="" formControlName="mobile_no" id="mobile_no">
+
+                        <!-- <mat-icon matSuffix>phone_iphone</mat-icon> -->
+                        <!-- <mat-error *ngIf="myError('mobile_no', 'required')">mobile number is required</mat-error> -->
+
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="card mb-4">
+           
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-12" style="text-align: right;">
+                        <button class="bg-color" mat-raised-button color="primary">SUBMIT</button>
+                        <button
+                        type="button"
+                        class="btn btn-outline-secondary"
+                        style="margin-left: 5px;"
+                      >
+                        Cancel
+                      </button>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,121 @@
+<div class="login-container">
+    <main>
+      <section class="login bgImg">
+        <div class="col-md-12 form-login">
+          
+          <div class="p-4 text-center" >
+           
+            <div class="auth-logo text-center mb-2 text-30">
+              <img src="assets/images/Accupayd_V2-01.png  " alt="" />
+            </div>
+            <h1 class="mb-3 text-18 singInCss" >SIGN IN</h1>
+            <form style="display: grid;" [formGroup]="signinForm" (ngSubmit)="signin()">
+              
+              <mat-form-field class="example-full-width mb-3 loginPadd">
+                <mat-label>Mobile Number</mat-label>
+                
+                <input type="tel" matInput placeholder="555-555-1234" formControlName="user_id"
+                >
+                <mat-icon matSuffix>mode_edit</mat-icon>
+              </mat-form-field>
+             
+              <mat-form-field class="example-full-width mb-3 loginPadd">
+                <mat-label>Password</mat-label> 
+               
+                <input type="password" matInput placeholder="**********" [type]="hide ? 'password' : 'text'" formControlName="password">
+                <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+  
+              </mat-form-field>
+              <div class="col-md-12 text-center mb-3">
+              <button class="bg-org" 
+              
+               mat-raised-button color="primary">Proceed</button>
+              </div>
+            
+            </form>
+            
+           
+          
+             
+              
+              
+  
+           
+  
+            <div class="mt-3 text-center forgotcss">
+              <a href="" class="text-muted " routerLink=""
+                ><u style="color: white;">Forgot Password</u></a
+              >
+            </div>
+          </div>
+          <div class="mb-3 text-center">
+            <div class="">
+              <h6 class="mb-2">
+                <b>Don’t have an account with us?</b><a href=""routerLink="/sessions/forgot-password" style="margin-left: 5px;"><b class="text-orange">SIGN UP</b></a>
+              </h6>
+              <!-- <p class="card-text">
+                ACCUPAYD, the next generation B2B e-commerce portal. Single
+                wallet, multiple services and unlimited income opportunities. Join
+                Today!
+              </p> -->
+              <!-- <button style="background-color: #325db3;" 
+               mat-raised-button color="primary" routerLink="/sessions/otp-check">SIGN UP</button>
+              -->
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section class="wallpaper">
+         <!-- <div id="container"> -->
+           
+          <!-- <div class="auth-logo text-center mb-2 text-30">
+            <img src="assets/images/vyabari.jpg" alt="" />
+          </div> -->
+        
+         <!-- InstantPay
+        
+         <div _ngcontent-wvm-c389="" data-aos="fade-up-left" data-aos-duration="500" class="col-lg-4 ng-tns-c389-4 aos-init aos-animate">
+          <div _ngcontent-wvm-c389="" class="heroSection ng-tns-c389-4">
+            <embed  style="width: 100%;
+            margin-left: -57px;"  _ngcontent-wvm-c389="" class="ng-tns-c389-4" src="https://static.instantpay.in/assets/web/animation/hero_section.svg">
+            </div>
+          </div> -->
+      
+          
+          <!-- <div id="flip">
+            <div><div>Interface!</div></div>
+            <div><div>Payments!</div></div>
+            <div><div>Unified!</div></div>
+          </div> -->
+          <!-- <h1 class="welcome-text">Welcome to the ACCUPAYD Application!</h1>
+          <h1 class="welcome-text">
+            Grow Your <span class="business">Business</span> and Increase your
+            <span class="business">Profit!</span>
+          </h1> -->
+        <!-- </div> -->
+      </section>
+    </main>
+  </div>
+  
+  
+  
+  
+  <style>
+    .login-block {
+  
+      background: url();
+    }
+    .auth-box{
+      margin-bottom: 50px;
+    }
+  
+    .invalid-feedback {
+      display: block !important;
+      color: red !important;
+      border-color: red !important;
+    }
+  </style>
+  <!-- <div class="login-footer">
+    <p>Copyright © 2023 Accupayd. All Right Reserved</p>
+  </div> -->

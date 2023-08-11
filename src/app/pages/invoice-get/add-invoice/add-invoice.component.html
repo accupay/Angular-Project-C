@@ -1,0 +1,93 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="card mb-4">
+            <div class="card-header bg-color">
+                <h5 class="text-white"><b>Add Invoice</b></h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <mat-form-field appearance="outline" class="col-md-6">
+                        <mat-label></mat-label>
+                        <input matInput placeholder="" type="" formControlName="" id="">
+
+                        <!-- <mat-icon matSuffix>phone_iphone</mat-icon> -->
+                        <!-- <mat-error *ngIf="myError('mobile_no', 'required')">mobile number is required</mat-error> -->
+
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="col-md-6 ">
+                        <mat-label>Select a Vendor</mat-label>
+                        <mat-select formControlName="" id="">
+
+                            <mat-option value="option1">Option1</mat-option>
+                            <mat-option value="option2">Option2</mat-option>
+                        </mat-select>
+                        <!-- <mat-icon matSuffix>rss_feed</mat-icon> -->
+                        <!-- <mat-error *ngIf="myError('operator', 'required')">operator is required</mat-error> -->
+
+
+
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="col-md-6">
+                        <mat-label>Invoice Number</mat-label>
+                        <input matInput placeholder="" type="number" formControlName="" id="">
+
+                        <!-- <mat-icon matSuffix>phone_iphone</mat-icon> -->
+                        <!-- <mat-error *ngIf="myError('mobile_no', 'required')">mobile number is required</mat-error> -->
+
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="col-md-6">
+                        <mat-label>Amount Payable to Vendor</mat-label>
+                        <input formControlName="" (change)="payvendor($event.target.value)" id=""
+                            autocomplete="off" type="number" matInput placeholder="Enter Amount">
+                        <!-- <mat-icon matSuffix>phone_iphone</mat-icon> -->
+                        <!-- <mat-error *ngIf="myError('mobile_no', 'required')">mobile number is required</mat-error> -->
+
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+                    <mat-form-field class="atp-mat-date-picker col-md-6">
+                        <input matInput [matDatepicker]="dp1" placeholder="Invoice Date" [max]="maxDate"
+                            [(ngModel)]="invoicedate" (click)="dp1.open()" />
+                        <mat-datepicker-toggle matSuffix [for]="dp1"></mat-datepicker-toggle>
+                        <mat-datepicker #dp1></mat-datepicker>
+                    </mat-form-field>
+                    <mat-form-field class="atp-mat-date-picker col-md-6">
+                        <input matInput [matDatepicker]="dp1" placeholder="Invoice Due Date" [max]="maxDate"
+                            [(ngModel)]="duedate" (click)="dp1.open()" />
+                        <mat-datepicker-toggle matSuffix [for]="dp1"></mat-datepicker-toggle>
+                        <mat-datepicker #dp1></mat-datepicker>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="col-md-6">
+                        <mat-label>Net Payable Amount</mat-label>
+                        <input formControlName="" id="" readonly autocomplete="off" type="number" matInput
+                            placeholder="Enter Amount" value="{{netpay}}">
+                        <!-- <mat-icon matSuffix>phone_iphone</mat-icon> -->
+                        <!-- <mat-error *ngIf="myError('mobile_no', 'required')">mobile number is required</mat-error> -->
+
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+                    <mat-form-field class="col-md-6" style="margin-top: -15px;">
+                        <label>Upload Invoice</label>
+                        <input matInput placeholder="" type="file" formControlName="" id="">
+                    </mat-form-field>
+                    <!-- <mat-form-field appearance="outline" class="columns col-md-6">
+                        <mat-label>Upload Invoice</mat-label>
+                       <mat-label *ngIf="selectedFiles; else newFile">{{selectedFiles.item(0).name}}</mat-label>
+                        <ng-template #newFile>
+                            <mat-label>Choose file</mat-label>
+                        </ng-template>
+                        <input matInput disabled>
+                        <button mat-icon-button matSuffix (click)="fileInput.click()">
+                            <mat-icon>attach_file</mat-icon>
+                        </button>
+                        <input hidden (change)="selectFile($event)" #fileInput type="file" id="file">
+                    </mat-form-field> -->
+                    <div class="col-md-12" style="text-align: center;">
+                        <button class="bg-color" mat-raised-button color="primary">UPLOAD</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
